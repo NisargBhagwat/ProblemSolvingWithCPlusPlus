@@ -3,6 +3,37 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+ Brute force
+ TC = nlog(n) + mlog(m) + log(n+m)
+ SC = O(n+m)
+*/
+// vector<int> sortedArray(vector<int> a, vector<int> b)
+// {
+//     set<int> Union;
+
+//     for (int i = 0; i < a.size(); i++) // nlog(n)
+//     {
+//         Union.insert(a[i]);
+//     }
+//     for (int i = 0; i < b.size(); i++) //mlog(m)
+//     {
+//         Union.insert(b[i]);
+//     }
+
+//     vector<int> arr;
+//     for (auto it : Union) //log(n+m)
+//     {
+//         arr.push_back(it);
+//     }
+//     return arr;
+// }
+
+/*
+Optimal
+TC = n + m + n + m = O(n+m)
+SC = O(n+m)
+*/
 vector<int> sortedArray(vector<int> a, vector<int> b)
 {
     int n = a.size();
@@ -11,7 +42,7 @@ vector<int> sortedArray(vector<int> a, vector<int> b)
     int j = 0;
     vector<int> Union;
 
-    while (i < n && j < m)
+    while (i < n && j < m) // n + m
     {
         int aIt = a[i];
         int bIt = b[j];
@@ -34,7 +65,7 @@ vector<int> sortedArray(vector<int> a, vector<int> b)
         }
     }
 
-    while (j < m)
+    while (j < m) //m
     {
         if (Union.back() != b[j])
         {
@@ -43,7 +74,7 @@ vector<int> sortedArray(vector<int> a, vector<int> b)
         j++;
     }
 
-    while (i < n)
+    while (i < n) //n
     {
         if (Union.back() != a[i])
         {
