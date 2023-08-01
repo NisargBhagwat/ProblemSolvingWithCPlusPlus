@@ -3,6 +3,42 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+Better solution
+TC = O(n) + O(n/2 + 1)
+SC = O(n/2 + 1)
+*/
+// class Solution
+// {
+// public:
+//     int singleNumber(vector<int> &nums)
+//     {
+//         int n = nums.size();
+//         map<int, int> numsCount;
+
+//         for (auto it : nums) // O(n)
+//         {
+//             numsCount[it]++;
+//         }
+
+//         for (auto it : numsCount) // O(n/2 + 1)
+//         {
+//             if (it.second == 1)
+//             {
+//                 return it.first;
+//             }
+//         }
+
+//         return -1;
+//     }
+// };
+
+/*
+Optimized solution
+TC= O(n);
+SC = O(1)
+*/
+
 class Solution
 {
 public:

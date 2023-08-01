@@ -16,10 +16,7 @@ public:
         {
             if (nums[j] == 0)
             {
-                if (i > k)
-                {
-                    k = i;
-                }
+                 k = max(k, i);
                 i = 0;
             }
             else
@@ -34,7 +31,7 @@ public:
 
 int main()
 {
-    vector <int>arr{1,1,0,1,1,1};
+    vector<int> arr{1, 1, 0, 1, 1, 1};
     Solution s;
     int ans = s.findMaxConsecutiveOnes(arr);
     cout << ans;

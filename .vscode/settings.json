@@ -12,6 +12,7 @@
         "regex": "cpp",
         "valarray": "cpp",
         "ostream": "cpp",
-        "arrayfindlargest": "cpp"
+        "arrayfindlargest": "cpp",
+        "iostream": "cpp"
     }
 }
