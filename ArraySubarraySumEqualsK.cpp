@@ -31,6 +31,7 @@ SC = O(1)
 
 /*
 Better approach
+this is best approach when a[i] is positive as well as negative
 TC = O(nlong(n));
 SC = O(n);
 */
@@ -69,7 +70,9 @@ SC = O(n);
 // }
 
 /*
-Best approach
+Best approach for if a[i] is only positive
+TC = O(n);
+SC = o(1)
 */
 
 int longestSubarrayWithSumK(vector<int> a, long long k)
