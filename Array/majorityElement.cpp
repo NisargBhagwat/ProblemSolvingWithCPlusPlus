@@ -1,4 +1,4 @@
-// https : // leetcode.com/problems/majority-element/description/
+// https://leetcode.com/problems/majority-element/description/
 // Boyer - Moore voting algorithm
 #include <bits/stdc++.h>
 using namespace std;

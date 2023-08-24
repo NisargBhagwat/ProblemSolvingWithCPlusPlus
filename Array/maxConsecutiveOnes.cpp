@@ -16,7 +16,7 @@ public:
         {
             if (nums[j] == 0)
             {
-                 k = max(k, i);
+                k = max(k, i);
                 i = 0;
             }
             else

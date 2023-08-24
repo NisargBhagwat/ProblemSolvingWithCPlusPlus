@@ -1,4 +1,4 @@
-// https : // www.codingninjas.com/studio/problems/longest-subarray-with-sum-j_6682399?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0
+// https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-j_6682399?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -35,7 +35,6 @@ this is best approach when a[i] is positive as well as negative
 TC = O(nlong(n));
 SC = O(n);
 */
-
 // int longestSubarrayWithSumK(vector<int> a, long long k)
 // {
 //     map<long long, int> preSumMap;
@@ -74,7 +73,6 @@ Best approach for if a[i] is only positive
 TC = O(n);
 SC = o(1)
 */
-
 int longestSubarrayWithSumK(vector<int> a, long long k)
 {
     int n = a.size();

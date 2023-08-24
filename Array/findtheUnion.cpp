@@ -44,6 +44,7 @@ vector<int> sortedArray(vector<int> a, vector<int> b)
 
     while (i < n && j < m) // n + m
     {
+        
         int aIt = a[i];
         int bIt = b[j];
 

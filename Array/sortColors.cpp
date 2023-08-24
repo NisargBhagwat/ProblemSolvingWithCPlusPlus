@@ -82,7 +82,8 @@ public:
             }
         }
 
-        for(auto it: nums){
+        for (auto it : nums)
+        {
             cout << it << endl;
         }
     }
@@ -90,9 +91,9 @@ public:
 
 int main()
 {
-    vector<int> nums = {2, 0, 2, 1, 1, 0};
-    Solution s;
 
+    vector<int> nums{2,0,2,1,1,0};
+    Solution s;
     s.sortColors(nums);
 
     return 0;
